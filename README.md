@@ -3,6 +3,7 @@ Cheatsheet to reference for flexbox values
 
 Based on going through (flexboxfroggy.com)[http://flexboxfroggy.com/]
 ```
+
 Element with 
   .element { display: flex; }
     can have the following properties:
@@ -17,7 +18,7 @@ Horizontal alignment (unless you apply flex-direction: columnn, then verticle)
       space-around:  Items display with equal spacing around them.
   }
 
-Verticle alignment
+Verticle alignment (unless you apply flex-direction: columnn, then horizontal)
   {
     align-items:
       flex-start: Items align to the top of the container.
@@ -52,8 +53,31 @@ Target specific element:
     align-self: <see all options for align-items>
   }
 
-Flex wrap:
-  nowrap:       Every item is fit to a single line.
-  wrap:         Items wrap around to additional lines.
-  wrap-reverse: Items wrap around to additional lines in reverse.
+Wrapping items:
+  {
+    flex-wrap:
+      nowrap:       Every item is fit to a single line.
+      wrap:         Items wrap around to additional lines.
+      wrap-reverse: Items wrap around to additional lines in reverse.
+  }
+
+Shorthand for using flex-direction with flex-wrap
+  flex-flow is a shorthand for flex-direction and flex-wrap.
+    Just makes it so you can put them both on the same line instead of 
+    having to declare both.
+
+  {
+    flex-flow: <flex-direction> <flex-wrap>
+  }
+
+Declare how multiple lines  of content should be spaced
+  {
+    align-content:
+      flex-start:    Lines are packed at the top of the container.
+      flex-end:      Lines are packed at the bottom of the container.
+      center:        Lines are packed at the vertical center of the container.
+      space-between: Lines display with equal spacing between them.
+      space-around:  Lines display with equal spacing around them.
+      stretch:       Lines are stretched to fit the container.
+  }
 ```
