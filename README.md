@@ -1,7 +1,7 @@
 # flexbox-cheatsheet
 Cheatsheet to reference for flexbox values
 
-Based on going through (flexboxfroggy.com)[http://flexboxfroggy.com/]
+Based on going through [flexboxfroggy.com](http://flexboxfroggy.com/)
 ```
 
 Element with 
